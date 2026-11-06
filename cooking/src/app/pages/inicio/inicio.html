@@ -1,0 +1,210 @@
+
+<!-- =========================
+     NAVEGACIÓN PRINCIPAL
+========================= -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+  <div class="container py-2">
+
+    <a class="navbar-brand fw-bold" href="#inicio">
+      <span class="marca-icono">♡</span> Mi sitio
+    </a>
+
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#menuPrincipal"
+      aria-controls="menuPrincipal"
+      aria-expanded="false"
+      aria-label="Abrir menú">
+
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="menuPrincipal">
+      <ul class="navbar-nav ms-auto gap-lg-3">
+
+        <li class="nav-item">
+          <a class="nav-link activo" routerLink="/inicio">
+            Inicio
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/producto">
+            Producto
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/contacto">
+            Contacto
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/nosotros">
+            Nosotros
+          </a>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<!-- =========================
+     PORTADA / INICIO
+========================= -->
+<header id="inicio" class="portada">
+  <div class="container">
+    <div class="row align-items-center g-5">
+
+      <!-- Texto principal -->
+      <div class="col-lg-6 orden-texto">
+
+        <span class="etiqueta">
+          PASTELERÍA ARTESANAL
+        </span>
+
+        <h1 class="titulo-principal mt-3">
+          El sabor de lo casero,
+          <span>hecho con amor.</span>
+        </h1>
+
+        <p class="descripcion-principal mt-4">
+          Descubrí nuestros budines artesanales, preparados
+          con dedicación e ideales para acompañar tus meriendas o desayunos.
+        </p>
+
+        <div class="d-flex flex-wrap gap-3 mt-4">
+
+          <a
+            routerLink="/producto"
+            class="btn btn-principal">
+            Ver productos
+          </a>
+
+          <a
+            routerLink="/nosotros"
+            class="btn btn-secundario">
+            Conocé nuestra historia
+          </a>
+
+        </div>
+
+        <div class="detalle-portada mt-4">
+          <span>♡</span>
+          Elaboración artesanal · Sabores para compartir
+        </div>
+
+      </div>
+
+      <!-- Imagen principal -->
+      <div class="col-lg-6">
+        <div class="contenedor-imagen">
+
+        <img src="snoopy.jpg" alt="logo" class="imagen principal">
+
+          <div class="etiqueta-imagen">
+            <span>♡</span>
+            Dulces momentos
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</header>
+
+
+<!-- =========================
+     PRESENTACIÓN
+========================= -->
+<section class="presentacion py-5">
+  <div class="container py-lg-4">
+
+    <div class="row align-items-center g-4">
+
+      <div class="col-lg-5">
+        <img
+          src="chips.jpg"
+          alt="Budín casero recién preparado"
+          class="imagen-presentacion">
+      </div>
+
+      <div class="col-lg-7">
+        <span class="etiqueta">
+          UN TOQUE DULCE PARA TU DÍA
+        </span>
+
+        <h2 class="titulo-seccion mt-3">
+          Hechos para disfrutar
+        </h2>
+
+        <p class="texto-presentacion mt-3">
+          En nuestro espacio, cada budín es una oportunidad
+          para compartir algo rico. Cuidamos cada detalle
+          para ofrecerte sabores que puedas disfrutar en
+          el desayuno, la merienda o cuando tengas ganas
+          de darte un gusto.
+        </p>
+
+        <a
+          routerLink="/nosotros"
+          class="enlace-mas">
+          Conocé más sobre nosotros →
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- =========================
+     ACCESO A PRODUCTOS
+========================= -->
+<section class="seccion-productos py-5">
+  <div class="container text-center py-lg-3">
+
+    <span class="etiqueta">
+      DESCUBRÍ NUESTROS SABORES
+    </span>
+
+    <h2 class="titulo-seccion mt-3">
+      Siempre hay un budín para vos
+    </h2>
+
+    <p class="texto-presentacion mx-auto mt-3">
+      Explorá nuestras variedades y encontrá tu favorito.
+    </p>
+
+    <a
+      routerLink="/producto"
+      class="btn btn-principal mt-3">
+      Ver todos los productos
+    </a>
+
+  </div>
+</section>
+
+
+<!-- =========================
+     PIE DE PÁGINA
+========================= -->
+<footer class="pie-pagina py-4">
+  <div class="container">
+
+    <div class="row align-items-center gy-2">
+
+      <div class="col-md-6 text-center text-md-start">
+        <span class="nombre-footer">♡ Mi sitio · BUDINES</span>
+      </div>
+
+    </div>
+
+  </div>
+</footer>

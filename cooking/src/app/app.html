@@ -1,0 +1,447 @@
+<!-- =========================
+     NAVEGACIÓN PRINCIPAL
+========================= -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+  <div class="container py-2">
+
+    <a class="navbar-brand fw-bold" routerLink="/inicio">
+      <span class="marca-icono">♡</span> Mi sitio
+    </a>
+
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#menuPrincipal"
+      aria-controls="menuPrincipal"
+      aria-expanded="false"
+      aria-label="Abrir menú">
+
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="menuPrincipal">
+      <ul class="navbar-nav ms-auto gap-lg-3">
+
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/inicio">
+            Inicio
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link activo" routerLink="/producto">
+            Producto
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/contacto">
+            Contacto
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/nosotros">
+            Nosotros
+          </a>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<!-- =========================
+     PORTADA DE PRODUCTOS
+========================= -->
+<header class="portada-productos">
+  <div class="container text-center">
+
+    <span class="etiqueta">
+      NUESTROS PRODUCTOS
+    </span>
+
+    <h1 class="titulo-principal mt-3">
+      Pequeños placeres,
+      <span>grandes momentos.</span>
+    </h1>
+
+    <p class="descripcion-principal mx-auto mt-4">
+      Descubrí nuestra variedad de budines artesanales,
+      elaborados con dedicación para acompañar tus
+      momentos más especiales.
+    </p>
+
+    <div class="detalle-portada mt-4">
+      <span>♡</span>
+      Sabores caseros hechos con amor
+    </div>
+
+  </div>
+</header>
+
+
+<!-- =========================
+     LISTADO DE PRODUCTOS
+========================= -->
+<section class="seccion-catalogo py-5">
+
+  <div class="container py-lg-4">
+
+    <div class="text-center mb-5">
+
+      <span class="etiqueta">
+        HECHOS PARA DISFRUTAR
+      </span>
+
+      <h2 class="titulo-seccion mt-3">
+        Nuestros budines
+      </h2>
+
+      <p class="texto-presentacion mx-auto mt-3">
+        Elegí tu sabor favorito y disfrutá de algo rico,
+        preparado artesanalmente.
+      </p>
+
+    </div>
+
+
+    <!-- Tarjetas de productos -->
+    <div class="row g-4">
+
+
+      <!-- PRODUCTO 1 -->
+      <div class="col-md-6 col-lg-4">
+
+        <div class="tarjeta-producto">
+
+          <div class="contenedor-foto">
+            <img
+              src="budin-vainilla.jpg"
+              alt="Budín de vainilla"
+              class="foto-producto">
+          </div>
+
+          <div class="contenido-producto">
+
+            <span class="categoria-producto">
+              CLÁSICO
+            </span>
+
+            <h3 class="nombre-producto">
+              Budín de vainilla
+            </h3>
+
+            <p class="descripcion-producto">
+              Suave, esponjoso y con el sabor tradicional
+              que nunca pasa de moda.
+            </p>
+
+            <div class="pie-producto">
+
+              <span class="precio-producto">
+                $0.000
+              </span>
+
+              <a routerLink="/contacto" class="btn-producto">
+                Consultar
+              </a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- PRODUCTO 2 -->
+      <div class="col-md-6 col-lg-4">
+
+        <div class="tarjeta-producto">
+
+          <div class="contenedor-foto">
+            <img
+              src="budin-chocolate.jpg"
+              alt="Budín de chocolate"
+              class="foto-producto">
+          </div>
+
+          <div class="contenido-producto">
+
+            <span class="categoria-producto">
+              FAVORITO
+            </span>
+
+            <h3 class="nombre-producto">
+              Budín de chocolate
+            </h3>
+
+            <p class="descripcion-producto">
+              Una opción irresistible para los amantes
+              del chocolate.
+            </p>
+
+            <div class="pie-producto">
+
+              <span class="precio-producto">
+                $0.000
+              </span>
+
+              <a routerLink="/contacto" class="btn-producto">
+                Consultar
+              </a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- PRODUCTO 3 -->
+      <div class="col-md-6 col-lg-4">
+
+        <div class="tarjeta-producto">
+
+          <div class="contenedor-foto">
+            <img
+              src="budin-limon.jpg"
+              alt="Budín de limón"
+              class="foto-producto">
+          </div>
+
+          <div class="contenido-producto">
+
+            <span class="categoria-producto">
+              FRESCO Y DELICADO
+            </span>
+
+            <h3 class="nombre-producto">
+              Budín de limón
+            </h3>
+
+            <p class="descripcion-producto">
+              Con un toque cítrico, ideal para acompañar
+              tus desayunos y meriendas.
+            </p>
+
+            <div class="pie-producto">
+
+              <span class="precio-producto">
+                $0.000
+              </span>
+
+              <a routerLink="/contacto" class="btn-producto">
+                Consultar
+              </a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- PRODUCTO 4 -->
+      <div class="col-md-6 col-lg-4">
+
+        <div class="tarjeta-producto">
+
+          <div class="contenedor-foto">
+            <img
+              src="budin-chips.jpg"
+              alt="Budín con chips de chocolate"
+              class="foto-producto">
+          </div>
+
+          <div class="contenido-producto">
+
+            <span class="categoria-producto">
+              ESPECIAL
+            </span>
+
+            <h3 class="nombre-producto">
+              Budín con chips
+            </h3>
+
+            <p class="descripcion-producto">
+              Esponjoso y lleno de chips de chocolate
+              en cada porción.
+            </p>
+
+            <div class="pie-producto">
+
+              <span class="precio-producto">
+                $0.000
+              </span>
+
+              <a routerLink="/contacto" class="btn-producto">
+                Consultar
+              </a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- PRODUCTO 5 -->
+      <div class="col-md-6 col-lg-4">
+
+        <div class="tarjeta-producto">
+
+          <div class="contenedor-foto">
+            <img
+              src="budin-naranja.jpg"
+              alt="Budín de naranja"
+              class="foto-producto">
+          </div>
+
+          <div class="contenido-producto">
+
+            <span class="categoria-producto">
+              ARTESANAL
+            </span>
+
+            <h3 class="nombre-producto">
+              Budín de naranja
+            </h3>
+
+            <p class="descripcion-producto">
+              Un sabor delicado y aromático,
+              perfecto para compartir.
+            </p>
+
+            <div class="pie-producto">
+
+              <span class="precio-producto">
+                $0.000
+              </span>
+
+              <a routerLink="/contacto" class="btn-producto">
+                Consultar
+              </a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- PRODUCTO 6 -->
+      <div class="col-md-6 col-lg-4">
+
+        <div class="tarjeta-producto">
+
+          <div class="contenedor-foto">
+            <img
+              src="budin-marmolado.jpg"
+              alt="Budín marmolado"
+              class="foto-producto">
+          </div>
+
+          <div class="contenido-producto">
+
+            <span class="categoria-producto">
+              ESPECIAL
+            </span>
+
+            <h3 class="nombre-producto">
+              Budín marmolado
+            </h3>
+
+            <p class="descripcion-producto">
+              La combinación perfecta entre vainilla
+              y chocolate.
+            </p>
+
+            <div class="pie-producto">
+
+              <span class="precio-producto">
+                $0.000
+              </span>
+
+              <a routerLink="/contacto" class="btn-producto">
+                Consultar
+              </a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     SECCIÓN FINAL
+========================= -->
+<section class="seccion-pedido py-5">
+
+  <div class="container text-center py-4">
+
+    <span class="etiqueta">
+      UN MOMENTO DULCE TE ESPERA
+    </span>
+
+    <h2 class="titulo-seccion mt-3">
+      ¿Ya elegiste tu favorito?
+    </h2>
+
+    <p class="texto-presentacion mx-auto mt-3">
+      Escribinos y consultanos por nuestros productos.
+      ¡Nos encanta preparar algo rico para vos!
+    </p>
+
+    <a
+      routerLink="/contacto"
+      class="btn btn-principal mt-3">
+      Hacer una consulta
+    </a>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     PIE DE PÁGINA
+========================= -->
+<footer class="pie-pagina py-4">
+
+  <div class="container">
+
+    <div class="row align-items-center gy-2">
+
+      <div class="col-md-6 text-center text-md-start">
+        <span class="nombre-footer">
+          ♡ Mi sitio · BUDINES
+        </span>
+      </div>
+
+    </div>
+
+  </div>
+
+</footer>
